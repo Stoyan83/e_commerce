@@ -5,9 +5,6 @@ const Home = () => {
   return (
     <>
       <h1>Ecommerce</h1>
-      <Link to="/">
-        Home
-      </Link>
     </>
   );
 };
