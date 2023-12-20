@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 5
+  host: <%= ENV.fetch('MYSQL_HOST', 'localhost') %>
+  username: <%= ENV.fetch('MYSQL_USER', 'root') %>
+  password: <%= ENV.fetch('MYSQL_PASSWORD', '') %>
+
+development:
+  <<: *default
+  database: e_commerce_dev
+
+test:
+  <<: *default
+  database: e_commerce_test
+
+production:
+  <<: *default
+  database: e_commerce
