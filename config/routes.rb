@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  root 'homepage#index'
+  root 'pages#index'
 
-  match '/*path', to: 'homepage#index', via: :all
+  namespace :api do
+    namespace :v1 do
+      resources :products, only: [:index]
+    end
+  end
+
+  match '/*path', to: 'pages#index', via: :all
 end
