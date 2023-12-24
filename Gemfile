@@ -38,8 +38,10 @@ group :test do
 end
 
 group :development do
-  gem 'web-console'
+  gem 'brakeman'
+  gem 'bundler-audit'
   gem 'byebug', '~> 11.1', '>= 11.1.3'
+  gem 'web-console'
 end
 
 group :test, :development do
