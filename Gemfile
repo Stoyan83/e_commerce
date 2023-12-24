@@ -39,6 +39,7 @@ end
 
 group :development do
   gem 'web-console'
+  gem 'byebug', '~> 11.1', '>= 11.1.3'
 end
 
 group :test, :development do
