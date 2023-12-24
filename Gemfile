@@ -7,8 +7,6 @@ gem 'jbuilder'
 gem 'mysql2', '~> 0.5.3'
 gem 'rails', '~> 7.0.8'
 
-
-
 # Cache
 gem 'redis', '~> 4.0'
 
@@ -19,7 +17,6 @@ gem 'bootsnap', require: false
 gem 'jsbundling-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
-
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
