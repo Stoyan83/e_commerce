@@ -15,7 +15,6 @@ gem 'puma', '~> 5.0'
 
 gem 'jsbundling-rails'
 
-
 gem 'turbo-rails'
 
 gem 'stimulus-rails'
@@ -37,6 +36,8 @@ end
 
 group :test do
   gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
   gem 'shoulda-matchers', '~> 5.3'
   gem 'simplecov', require: false
 end
