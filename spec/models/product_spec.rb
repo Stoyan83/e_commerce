@@ -6,8 +6,8 @@ describe Product do
   context 'associations' do
     it { is_expected.to belong_to(:product_group) }
     it { is_expected.to belong_to(:brand) }
-    # it { is_expected.to belong_to(:color).optional }
-    # it { is_expected.to belong_to(:size).optional }
+    it { is_expected.to belong_to(:color).optional }
+    it { is_expected.to belong_to(:size).optional }
   end
 
   context 'validations' do
@@ -22,8 +22,8 @@ describe Product do
       it 'validates uniqueness of the combination of attributes' do
         product = build(:product,
                         product_group: existing_product.product_group,
-                        # color: existing_product.color,
-                        # size: existing_product.size,
+                        color: existing_product.color,
+                        size: existing_product.size,
                         brand: existing_product.brand)
 
         expect(product).not_to be_valid
