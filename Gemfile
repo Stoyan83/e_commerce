@@ -44,4 +44,5 @@ end
 group :test, :development do
   gem 'sprockets-rails'
   gem 'puma', '~> 5.0'
+  gem 'faker', '~> 3.2', '>= 3.2.2'
 end
