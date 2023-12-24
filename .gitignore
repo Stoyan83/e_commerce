@@ -8,6 +8,9 @@
 .ruby-version
 .byebug_history
 
+/coverage
+coverage.data
+
 # Ignore bundler config.
 /.bundle
 
