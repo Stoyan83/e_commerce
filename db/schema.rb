@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.0].define(version: 2023_12_21_110809) do
   create_table "brands", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.boolean "active", default: true
-    t.string "redemption"
+    t.integer "redemption"
     t.string "name", null: false
     t.text "description", null: false
     t.datetime "created_at", null: false
