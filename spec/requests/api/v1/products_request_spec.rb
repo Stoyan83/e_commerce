@@ -19,10 +19,10 @@ RSpec.describe 'api/v1/products' do
 
       json_response = JSON.parse(response.body, symbolize_names: true)
 
-      expected_attributes_first = product_first.attributes.except('created_at', 'updated_at').symbolize_keys
-      expected_attributes_second = product_second.attributes.except('created_at', 'updated_at').symbolize_keys
-
-      expect(json_response).to contain_exactly(expected_attributes_first, expected_attributes_second)
+      expect(json_response).to contain_exactly({ id: product_first.id,
+                                                 quantity: product_first.quantity },
+                                               { id: product_second.id,
+                                                 quantity: product_second.quantity })
     end
   end
 end
